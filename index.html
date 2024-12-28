@@ -10,7 +10,7 @@
       align-items: center;
       justify-content: center;
       flex-flow: column;
-     margin: auto 15%;
+     margin: auto 18%;
     }
 
     .wrapper > * {
@@ -23,12 +23,31 @@
     }
 
     .large {
-      font-size: x-large;
+      font-size: 1.5em;
     }
 
     .right {
       margin-left: 5%;
     }
+   /* Medium screens */
+@media all and (max-width: 800px) {
+  .wrapper {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: center;
+     flex-flow: column;
+     margin: auto 8%;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .wrapper {
+    /* On small screens, we are no longer using row direction but column */
+   justify-content: center;
+     flex-flow: column;
+     margin: auto 4%;
+  }
+}
   </style>
 </head>
 <body>
