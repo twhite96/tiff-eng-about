@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Tiff</title>
-<style>
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="favicon.ico">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon-152-precomposed.png">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon-144-precomposed.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon-120-precomposed.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon-114-precomposed.png">
+
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180-precomposed.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon-72-precomposed.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon-57.png">
+
+  <!-- For Old Chrome -->
+  <link rel="icon" sizes="32x32" href="favicon-32.png">
+
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" sizes="192x192" href="favicon-192.png">
+  <style>
     .wrapper {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-flow: column;
-     margin: auto 18%;
+      margin: auto 18%;
     }
 
-    .wrapper > * {
-       padding: 10px;
-       flex: 1 100%;
+    .wrapper>* {
+      padding: 10px;
+      flex: 1 100%;
     }
 
-    h1, p {
+    h1,
+    p {
       font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
@@ -29,35 +69,41 @@
     .right {
       margin-left: 5%;
     }
-   /* Medium screens */
-@media all and (max-width: 800px) {
-  .wrapper {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    justify-content: center;
-     flex-flow: column;
-     margin: auto 8%;
-  }
-}
 
-/* Small screens */
-@media all and (max-width: 500px) {
-  .wrapper {
-    /* On small screens, we are no longer using row direction but column */
-   justify-content: center;
-     flex-flow: column;
-     margin: auto 4%;
-  }
-}
+    /* Medium screens */
+    @media all and (max-width: 800px) {
+      .wrapper {
+        /* When on medium sized screens, we center it by evenly distributing empty space around items */
+        justify-content: center;
+        flex-flow: column;
+        margin: auto 8%;
+      }
+    }
+
+    /* Small screens */
+    @media all and (max-width: 500px) {
+      .wrapper {
+        /* On small screens, we are no longer using row direction but column */
+        justify-content: center;
+        flex-flow: column;
+        margin: auto 4%;
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="wrapper">
     <h1 class="right">
       So you wanna know more, eh?
     </h1>
-    <p class="large">Hi, my name is Tiffany. I used to be a frontend developer at <a href="https://www.icf.com/">ICF</a> and a software engineer at <a href="https://calaxy.com">Calaxy</a>. I'm currently
-    forcibly retired and <a href="https://homelab.tiff.tools">hacking on DevOps</a> and <a href="https://codeberg.org/tiff">small code projects</a>. I also enjoy tinkering with  DIY electronics and electronics repair. I write over at longer posts at <a href="https://tiff.engineer">tiff on software</a>
-    and shorter missives at <a href="https://micro.tiff.engineer">thoughts on software engineering</a>.</p>
+    <p class="large">Hi, my name is Tiffany. I used to be a frontend developer at <a href="https://www.icf.com/">ICF</a>
+      and a software engineer at <a href="https://calaxy.com">Calaxy</a>. I'm currently
+      forcibly retired and <a href="https://homelab.tiff.tools">hacking on DevOps</a> and <a
+        href="https://codeberg.org/tiff">small code projects</a>. I also enjoy tinkering with DIY electronics and
+      electronics repair. I write over at longer posts at <a href="https://tiff.engineer">tiff on software</a>
+      and shorter missives at <a href="https://micro.tiff.engineer">thoughts on software engineering</a>.</p>
   </div>
 </body>
+
 </html>
